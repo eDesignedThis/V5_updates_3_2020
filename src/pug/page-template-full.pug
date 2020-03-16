@@ -1,0 +1,17 @@
+//- This is a full-width page with no header or footer. Used for system error pages.
+
+extends ../pug/index.pug
+block header
+    header.d-none
+
+block page-content
+    main.d-flex.full-height
+        .row.my-auto.justify-content-center.mx-auto.text-center
+            .col-md-8
+                block screen-content
+                    h1 Lorem ipsum dolor sit.
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid expedita molestiae nam nihil ab repellendus ea fugiat eveniet ipsam consequatur?
+
+
+block footer-content
+   

@@ -1,0 +1,13 @@
+extends ../pug/index.pug
+
+block page-content
+    main.full-height
+        .row.my-auto.justify-content-center.mx-auto.text-center
+            .col-xl-8#page-content
+                block page-title
+                    include ../pug/layout/components/page-titles.pug
+
+                block page-content
+                    //- Insert Page Content Here
+
+

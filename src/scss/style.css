@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.full-height {
+  min-height: calc(100vh - 112px) !important;
+}
+
+#page-title-wrapper h1,
+#page-title-wrapper p {
+  margin-bottom: 0;
+}
+
+#chart {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
