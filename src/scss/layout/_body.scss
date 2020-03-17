@@ -2,6 +2,17 @@
   min-height: calc(100vh - 112px) !important;
 }
 
+// Equal Height Columns
+.equal-height-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal-height-columns > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
 // Typography
 
 // Page Titles

@@ -1,0 +1,38 @@
+.full-height__adventure--login {
+  min-height: calc(100vh - 254px) !important;
+}
+
+.col-lg-8 > .login-wrapper {
+  background: transparentize($color: $primary, $amount: 0);
+}
+
+.login-wrapper {
+  a {
+    color: white;
+  }
+}
+
+.login-callout {
+  text-align: center;
+  font-size: 1.5rem;
+  a {
+    color: white;
+    margin-bottom: 0;
+  }
+}
+
+// Media Queries
+@media (min-width: 576px) {
+}
+
+@media (min-width: 1024px) {
+  .col-lg-8.login-wrapper {
+    background: $primary;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-callout {
+    font-size: 1.25rem;
+  }
+}

@@ -1,4 +1,21 @@
 @import "../scss/_variables.scss";
 @import "../scss/layout/_body.scss";
 
+/***********************************************************
+- COMPONENTS
+***********************************************************/
+// Links
+@import "../scss/_links.scss";
+
+// Charts
 @import "../scss/data/charts/_charts.scss";
+
+// Forms
+@import "../scss/_forms.scss";
+
+/***********************************************************
+- Themes
+***********************************************************/
+
+// Adventure
+@import "../scss/themes/_theme--adventure.scss";

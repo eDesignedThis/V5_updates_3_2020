@@ -1,0 +1,38 @@
+extends ../../../pug/page-template-normal.pug
+
+block header
+    include ../../../pug/themes/adventure/headers/header--adventure.pug
+
+block page-content
+    main.full-height__adventure--login.full-size-img.d-flex.flex-column
+        .row.justify-content-center.mx-auto.my-auto.w-100
+            .col-xl-8#page-content
+                block page-title
+                    
+                block page-content
+                    .row.equal-height-columns.p-4
+                        .col-lg-8.d-flex.flex-column.mb-4.mb-lg-0.login-wrapper
+                            .login-form__adventure.p-4.my-auto.text-white.login-wrapper
+                                .row.flex-column
+                                    .col-12 
+                                        h1.mb-0 Welcome 
+                                        p Sign in below to manage your account.
+                                    .col-12
+                                        //- Insert Login Form Here
+                                        include ../../../pug/layout/components/forms/login/form-login.pug
+                        .col-lg-4
+                            .row.d-flex.flex-lg-column.equal-height-columns
+                                .col-12.mb-4
+                                    .bg-primary.d-block.p-5.login-callout
+                                        a(href="#") Enroll
+
+                                .col-12.mb-4
+                                    .bg-primary.d-block.p-5.login-callout
+                                        a(href='#') About The Program
+
+                                .col-12
+                                    .bg-primary.d-block.p-5.login-callout
+                                        a(href="#") Contact
+
+block footer-content
+    include ../../../pug/themes/adventure/footers/footer--adventure.pug

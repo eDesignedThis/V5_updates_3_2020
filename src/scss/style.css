@@ -1,5 +1,86 @@
+.bg-primary,
+.btn-primary {
+  background: #023b56 !important;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: #eea21f !important;
+}
+
+.bg-success,
+.btn-success {
+  background: #28a745 !important;
+}
+
+.bg-danger,
+.btn-danger {
+  background: #dc3545 !important;
+}
+
+.bg-warning,
+.btn-warning {
+  background: #ffc107 !important;
+}
+
+.bg-info {
+  background: #17a2b8;
+}
+
+.bg-light {
+  background: #f8f9fa !important;
+}
+
+.bg-dark {
+  background: #343a40 !important;
+}
+
+.bg-white {
+  background: #fff !important;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.text-primary {
+  color: #023b56 !important;
+}
+
+.text-secondary {
+  color: #eea21f !important;
+}
+
+/***********************************************************
+- Mixins
+***********************************************************/
+.full-size-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/pug/themes/adventure/images/login_bg.jpeg");
+}
+
 .full-height {
   min-height: calc(100vh - 112px) !important;
+}
+
+.equal-height-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.equal-height-columns > [class*="col-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #page-title-wrapper h1,
@@ -7,8 +88,72 @@
   margin-bottom: 0;
 }
 
+/***********************************************************
+- COMPONENTS
+***********************************************************/
+footer a,
+footer a.nav-link,
+header a,
+header a.nav-link {
+  color: #023b56;
+}
+
+footer a:hover,
+footer a.nav-link:hover,
+header a:hover,
+header a.nav-link:hover {
+  color: link-hover(#023b56);
+}
+
 #chart {
   width: 100%;
   height: auto;
+}
+
+.form-control input {
+  border: none;
+}
+
+button input {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/***********************************************************
+- Themes
+***********************************************************/
+.full-height__adventure--login {
+  min-height: calc(100vh - 254px) !important;
+}
+
+.col-lg-8 > .login-wrapper {
+  background: #023b56;
+}
+
+.login-wrapper a {
+  color: white;
+}
+
+.login-callout {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.login-callout a {
+  color: white;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .col-lg-8.login-wrapper {
+    background: #023b56;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-callout {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

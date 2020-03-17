@@ -1,0 +1,16 @@
+#login-form
+    .form-group
+        label(for='loginEmail') Email Address
+        .form-control
+            input#email.loginusername(name='email' type='text' placeholder='' style='' required='1' label='Username' maxlength='75')
+    .form-group
+        label(for='loginPassword') Password
+        .form-control
+            input#password.loginpassword(type='password' name='password' placeholder='' style='' required='1' label='Password')
+    .login-button-row
+        .forgot-password-enrollment-group
+        a(href='#')
+        a(href='javascript: openResetPassword()' title='Click to request new password') Forgot your password?
+        button.btn.btn-primary.login-button(type='submit' value='' name='')
+            input#cmdSubmit.loginbutton(type='submit' name='cmdSubmit' value='Login' title='Click to login' onclick='return check(this.form);')
+    #error_message.error

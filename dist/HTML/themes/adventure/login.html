@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FontAwesome Kit-->
+  <script src="https://kit.fontawesome.com/5f21471d45.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- DevExtreme themes-->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.common.css">
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.light.css">
+  <!-- Main Stylesheet-->
+  <link rel="stylesheet" href="/src/scss/style.css">
+  <link rel="stylesheet" href="/src/scss/custom.css">
+  <title>V5 2020</title>
+</head>
+<body>
+  <header class="d-block header--adventure">
+    <div class="bg-primary" id="header-title">
+      <div class="row mx-auto py-3">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="header-title text-white mb-0">Rewarding Adventures</h1>
+          <p class="lead text-secondary">When Was The Last Time You Rewarded Yourself?</p>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light d-none"><a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Some Shit <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="full-height__adventure--login full-size-img d-flex flex-column">
+    <div class="row justify-content-center mx-auto my-auto w-100">
+      <div class="col-xl-8" id="page-content">
+        <div class="row equal-height-columns p-4">
+          <div class="col-lg-8 d-flex flex-column mb-4 mb-lg-0 login-wrapper">
+            <div class="login-form__adventure p-4 my-auto text-white login-wrapper">
+              <div class="row flex-column">
+                <div class="col-12"> 
+                  <h1 class="mb-0">Welcome </h1>
+                  <p>Sign in below to manage your account.</p>
+                </div>
+                <div class="col-12">
+                  <div id="login-form">
+                    <div class="form-group">
+                      <label for="loginEmail">Email Address</label>
+                      <div class="form-control">
+                        <input class="loginusername" id="email" name="email" type="text" placeholder="" required="1" label="Username" maxlength="75">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="loginPassword">Password</label>
+                      <div class="form-control">
+                        <input class="loginpassword" id="password" type="password" name="password" placeholder="" required="1" label="Password">
+                      </div>
+                    </div>
+                    <div class="login-button-row">
+                      <div class="forgot-password-enrollment-group"></div><a href="#"></a><a href="javascript: openResetPassword()" title="Click to request new password">Forgot your password?</a>
+                      <button class="btn btn-primary login-button" type="submit" value="" name="">
+                        <input class="loginbutton" id="cmdSubmit" type="submit" name="cmdSubmit" value="Login" title="Click to login" onclick="return check(this.form);">
+                      </button>
+                    </div>
+                    <div class="error" id="error_message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row d-flex flex-lg-column equal-height-columns">
+              <div class="col-12 mb-4">
+                <div class="bg-primary d-block p-5 login-callout"><a href="#">Enroll</a></div>
+              </div>
+              <div class="col-12 mb-4">
+                <div class="bg-primary d-block p-5 login-callout"><a href="#">About The Program</a></div>
+              </div>
+              <div class="col-12">
+                <div class="bg-primary d-block p-5 login-callout"><a href="#">Contact</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="d-block">
+    <div class="row mx-auto bg-light">
+      <div class="col-12">
+        <nav class="navbar navbar-light">
+          <ul class="nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row py-4 bg-primary text-light text-center mx-auto">
+      <div class="col-12"><small class="mb-0 copyright">Copyright &copy; 2020. Rewardtrax</small></div>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/src/js/data.json"></script>
+  <script type="text/javascript" src="/src/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Devextreme-->
+  <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.6/js/dx.all.js"></script>
+</body>

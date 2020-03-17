@@ -1,0 +1,10 @@
+footer,
+header {
+  a,
+  a.nav-link {
+    color: $primary;
+    &:hover {
+      color: link-hover($primary);
+    }
+  }
+}

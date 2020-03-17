@@ -1,1 +1,84 @@
-$primary: blue;
+$primary: #023b56;
+$secondary: #eea21f;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+$white: #fff;
+$transparent: transparent;
+$accent: $info;
+
+// Bootstrap Background and Button Class Overrides
+.bg-primary,
+.btn-primary {
+  background: $primary !important;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: $secondary !important;
+}
+
+.bg-success,
+.btn-success {
+  background: $success !important;
+}
+
+.bg-danger,
+.btn-danger {
+  background: $danger !important;
+}
+
+.bg-warning,
+.btn-warning {
+  background: $warning !important;
+}
+
+.bg-info {
+  background: $info;
+}
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-dark {
+  background: $dark !important;
+}
+
+.bg-white {
+  background: $white !important;
+}
+
+.bg-transparent {
+  background: $transparent !important;
+}
+
+// Text Color Utility Overrides
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+/***********************************************************
+- Mixins
+***********************************************************/
+// Link Hover
+@mixin link-hover($link) {
+  color: darken($link, 10%);
+}
+
+// Full Size Image
+
+.full-size-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/pug/themes/adventure/images/login_bg.jpeg");
+}
