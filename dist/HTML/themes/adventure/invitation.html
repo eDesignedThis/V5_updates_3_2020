@@ -18,37 +18,73 @@
   <title>V5 2020</title>
 </head>
 <body>
-  <header class="d-block">
-    <nav class="navbar navbar-expand-xl navbar-light bg-light"><a class="navbar-brand" href="#">Navbar</a>
+  <header class="d-block header--adventure">
+    <div class="bg-primary" id="header-title">
+      <div class="row mx-auto py-3">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="header-title text-white mb-0"> </h1>
+          <p class="lead text-secondary header-byline"></p>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-        </ul>
+        <ul class="navbar-nav ml-auto"></ul>
       </div>
     </nav>
   </header>
-  <main class="full-height">
-    <div class="row my-auto justify-content-center mx-auto text-center">
-      <div class="col-xl-5 pb-3" id="page-content">
+  <main class="full-height__adventure--login full-size-img d-flex flex-column">
+    <div class="row justify-content-center mx-auto my-auto w-100">
+      <div class="col-xl-8" id="page-content">
         <div class="row flex-column py-4 mb-4 text-center" id="page-title-wrapper">
           <div class="col-12">
             <h1 class="page-title">Page Title</h1>
             <p class="lead page-byline">Page Byline Goes Here.</p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column mb-4 mb-lg-0 mx-auto">
+            <div class="login-form__adventure p-4 my-auto text-white bg-primary">
+              <div class="row flex-column">
+                <div class="col-12"> 
+                  <h1 class="mb-0">Let's get you activated.</h1>
+                  <p>Enter your invitation ID to begin enrollment.</p>
+                </div>
+                <div class="col-12">
+                  <div id="invitation-form">
+                    <div class="form-group">
+                      <label for="loginEmail">Invitation ID</label>
+                      <div class="form-control">
+                        <input class="loginusername" id="email" name="email" type="text" placeholder="" required="1" label="Username" maxlength="75">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary login-button" type="submit" value="" name="">
+                        <input class="loginbutton" id="cmdSubmit" type="submit" name="cmdSubmit" value="Submit " title="Click to login" onclick="return check(this.form);">
+                      </button>
+                    </div>
+                    <div class="error" id="error_message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
   <footer class="d-block">
-    <nav class="navbar navbar-light bg-light">
-      <ul class="nav mx-auto">
-        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-      </ul>
-    </nav>
+    <div class="row mx-auto bg-light">
+      <div class="col-12">
+        <nav class="navbar navbar-light">
+          <ul class="nav mx-auto footer-links"></ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row py-4 bg-primary text-light text-center mx-auto">
+      <div class="col-12"><small class="mb-0 copyright">Copyright &copy; 2020. Rewardtrax</small></div>
+    </div>
   </footer>
   <!-- jQuery first, then Popper.js, then Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

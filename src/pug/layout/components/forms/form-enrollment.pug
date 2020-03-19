@@ -1,0 +1,62 @@
+form#enrollment-form
+    .form-row
+        .form-group.col-md-6
+            label(for="First Name") First Name
+            input.form-control#enrollment_firstName(type="text")
+        .form-group.col-md-6
+            label(for="Last Name") Last Name
+            input.form-control#enrollment_lastName(type="text")
+        .form-group.col-12
+            label(for="Email") Email
+            input.form-control#enrollment_email(type="email")
+        .form-group.col-12
+            label(for="Phone") Phone
+            input.form-control#enrollment_phone(type="text")
+        .form-group.col-md-6
+            label(for="Birth Date") Birth Date
+            input.form-control#enrollment_birthDate(type="text")
+        .form-group.col-md-6
+            label(for="Hire Date") Hire Date
+            input.form-control#enrollment_hireDate(type="text")
+        .form-group.col-12
+            label(for="Communication Preference") Communication Preference
+            select.custom-select#enrollment_communication.form-control
+                option(selected='') Choose...
+                option(value="1")   Text Message
+                option(value="2")   Push Notification
+                option(value="3")   Email
+        .form-group.col-12
+            label(for="Address") Address
+            input.form-control#enrollment_address(type="text")
+        .form-group.col-md-7
+            label(for="City") City
+            input.form-control#enrollment_city(type="text")
+        .form-group.col-md-2
+            label(for="State") State
+            input.form-control#enrollment_state(type="text")
+        .form-group.col-md-3
+            label(for="Zip") Zip
+            input.form-control#enrollment_zip(type="text")
+        .form-group.col-12.mt-4.mb-4
+            h2.h3.font-weight-light.border-bottom Create Your Password
+        .form-group
+            p Passwords must be at least 8 characters and include at least one uppercase letter, one lowercase letter, and one number.
+        .form-group.col-md-6
+            label(for="Create Your Password") Create Your Password
+            input.form-control#enrollment_enterPassword(type="password")
+        .form-group.col-md-6
+            label(for="Create Your Password") Confirm Your Password
+            input.form-control#enrollment_enterPassword(type="password")
+        .col-12
+            .alert.alert-secondary(role='alert')
+                .row.mx-auto
+                    .col-1.form-group.form-check
+                    input.form-check-input#enrollment_terms(type="checkbox")
+
+                    .col-11 
+                    p.mb-0 I have read and accept the 
+                        span
+                            a(href='#') Terms of Use Agreement
+                        |  that governs the site which includes my consent to receive program relate communications.
+        .form-group.col-md-6.mx-auto.mb-0
+            input#cmdSubmit.btn.btn-primary.btn-block.complete-enrollment(name="cmdSubmit" type="button" value="Complete Enrollment")

@@ -1,0 +1,97 @@
+extends ../../../pug/index.pug
+
+block header
+    include ../../../pug/themes/adventure/headers/header--adventure.pug
+
+block page-content
+    main.full-height.d-flex.flex-column
+        .row.justify-content-center.mx-auto.w-100.no-gutters
+            .col-12#page-content 
+                block page-content
+                    .jumbotron.mb-0.full-size-img(style='background-image: url("/src/pug/themes/adventure/images/login_bg.jpeg")')
+                        .container.py-xl-5
+                            .row.equal-height-columns
+                                .col-12.col-sm-6.col-xl-3.adventure--callout
+                                    a(href="#").py-5.text-center.bg-primary
+                                        p.fas.fa-trophy.text-secondary
+                                        p.text-white.mb-4.mb-xl-0 Check your leaderboard status
+                                
+                                .col-12.col-sm-6.col-xl-3.adventure--callout
+                                    a(href="#").bg-primary.py-5.text-center.bg-primary
+                                        p.fas.fa-crosshairs.text-secondary
+                                        p.text-white.mb-4.mb-xl-0 Check your goals
+
+                                .col-12.col-sm-6.col-xl-3.adventure--callout
+                                    a(href="#").py-5.text-center.bg-primary
+                                        p.fas.fa-heart.text-secondary
+                                        p.text-white.mb-0 Make a wish, put it here
+
+                                .col-12.col-sm-6.col-xl-3.adventure--callout
+                                    a(href="#").py-5.text-center.bg-primary
+                                        p.fas.fa-star.text-secondary
+                                        p.text-white.mb-0.mb-xl-0 Check past awards
+                    
+                    //- Intro Message
+                    .row.mx-auto#adventure__section--cta.border-top.border-bottom.border-secondary
+                        .col-xl-8.mx-auto.text-center.py-5
+                            h2.text-secondary Hey! Here's Some Interesting News!
+                            p.lead.mb-0.text-primary Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga cumque maxime eius dolores culpa quo doloribus voluptatum ea officiis, ipsam pariatur cum non recusandae libero ad quisquam sit nisi labore.
+
+                    //- Leaderboard
+                    .row.mx-auto#adventure__section--leaderboard.full-size-img.py-5.text-center(style='background-image:url("https://images.pexels.com/photos/2983126/pexels-photo-2983126.jpeg");')
+                        .col-6.mx-auto 
+                            h2.text-secondary Leaderboard
+                            p.text-white Click here to see the whole leaderboard
+                        .col-8.mx-auto 
+                            .row 
+                                mixin leaderboard__card
+                                    .col-12.mb-4.col-sm-6.col-xl-3
+                                        .bg-white.p-5.shadow.leaderboard__home__default
+                                            .leaderboard__home__default__avatar.mx-auto
+                                                //- img.img-fluid.mx-auto(src='https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg')
+                                            p.text-primary.my-2.font-weight-bold.pax_name 
+                                                //- Input User Name
+                                            p.text-muted.pax_job-title Job Title
+                                            .display-4.text-secondary.leaderboard__place FIRST PLACE
+                                
+                                -for(i=0; i<4; i++)
+                                    +leaderboard__card
+
+
+
+                    //- Metrics
+                    .row.mx-auto.bg-primary.border-top.border-bottom.border-secondary#program-metrics.no-gutters.text-center
+                        .col-12.col-xl-6.border-secondary.p-4.split-screen-left
+                            h4.widget-title.text-secondary.mb-2 Goal Tracking
+                                //- Insert Circular Gauge Token Here
+                                #goal-tracking.svg-container
+                                    svg.circliful(xmlns='http://www.w3.org/2000/svg' version='1.1' viewbox='0 0 194 186')
+                                        circle.border(cx='100' cy='100' r='57' fill='none' stroke='#ccc' stroke-width='10' stroke-dasharray='360' transform='rotate(-90,100,100)')
+                                        circle.circle(cx='100' cy='100' r='57' fill='none' stroke='#00FF00' stroke-width='10' stroke-dasharray='262.8, 20000' transform='rotate(-90,100,100)')
+                                        circle(cx='100' cy='100' r='28.5' fill='none')
+                                        | undefined
+                                        text.timer(text-anchor='middle' x='100' y='113' style='font-size: 22px; undefined;' fill='#aaa')
+                                            tspan.number 73
+                                            tspan.percent %
+                        .col-12.col-xl-6.p-5.split-screen-right
+                            h4.widget-title.text-secondary.mb-2 Wish List
+                            //- You currently have no items on your wishlist
+                            
+
+
+
+                    .row.mx-auto#my-awards.text-center.full-size-img(style='background-image: url("/src/pug/themes/adventure/images/myawards_bg.jpeg")')
+                        .col-12.py-5
+                            h4.widget-title.text-secondary My Awards
+
+                       
+                             
+                    
+
+
+                                
+                    
+                        
+
+block footer-content
+    include ../../../pug/themes/adventure/footers/footer--adventure.pug

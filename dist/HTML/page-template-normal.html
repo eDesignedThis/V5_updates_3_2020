@@ -13,6 +13,8 @@
   <!-- Main Stylesheet-->
   <link rel="stylesheet" href="/src/scss/style.css">
   <link rel="stylesheet" href="/src/scss/custom.css">
+  <!-- Shopping DrillDown Menu CSS-->
+  <link rel="stylesheet" href="/src/scss/jquery-stack-menu.min.css">
   <title>V5 2020</title>
 </head>
 <body>
@@ -31,9 +33,11 @@
   <main class="full-height">
     <div class="row my-auto justify-content-center mx-auto text-center">
       <div class="col-xl-8" id="page-content">
-        <div class="row flex-column py-4 border-bottom mb-4" id="page-title-wrapper">
-          <h1 class="page-title">Page Title</h1>
-          <p class="lead page-byline">Page Byline Goes Here.</p>
+        <div class="row flex-column py-4 mb-4 text-center" id="page-title-wrapper">
+          <div class="col-12">
+            <h1 class="page-title">Page Title</h1>
+            <p class="lead page-byline">Page Byline Goes Here.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -49,7 +53,9 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="/src/js/data.json"></script>
+  <script src="/src/js/navigation.json"></script>
   <script type="text/javascript" src="/src/js/main.js"></script>
+  <script src="/js/jquery-stack-menu.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- Devextreme-->

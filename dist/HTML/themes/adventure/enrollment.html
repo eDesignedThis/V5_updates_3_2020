@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FontAwesome Kit-->
+  <script src="https://kit.fontawesome.com/5f21471d45.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- DevExtreme themes-->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.common.css">
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.light.css">
+  <!-- Main Stylesheet-->
+  <link rel="stylesheet" href="/src/scss/style.css">
+  <link rel="stylesheet" href="/src/scss/custom.css">
+  <!-- Shopping DrillDown Menu CSS-->
+  <link rel="stylesheet" href="/src/scss/jquery-stack-menu.min.css">
+  <title>V5 2020</title>
+</head>
+<body>
+  <header class="d-block header--adventure">
+    <div class="bg-primary" id="header-title">
+      <div class="row mx-auto py-3">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="header-title text-white mb-0"> </h1>
+          <p class="lead text-secondary header-byline"></p>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto"></ul>
+      </div>
+    </nav>
+  </header>
+  <main class="full-height__adventure--login full-size-img d-flex flex-column">
+    <div class="row justify-content-center mx-auto my-auto w-100">
+      <div class="col-xl-5 pt-0 pb-5" id="page-content">
+        <div class="row flex-column py-4 border-bottom mb-4 text-center text-white" id="page-title-wrapper">
+          <div class="col-12">
+            <h1 class="page-title">Enrollment</h1>
+            <p class="lead page-byline">Activate your program.</p>
+          </div>
+        </div>
+        <div class="bg-primary p-5 text-white">
+          <form id="enrollment-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="First Name">First Name</label>
+                <input class="form-control" id="enrollment_firstName" type="text">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Last Name">Last Name</label>
+                <input class="form-control" id="enrollment_lastName" type="text">
+              </div>
+              <div class="form-group col-12">
+                <label for="Email">Email</label>
+                <input class="form-control" id="enrollment_email" type="email">
+              </div>
+              <div class="form-group col-12">
+                <label for="Phone">Phone</label>
+                <input class="form-control" id="enrollment_phone" type="text">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Birth Date">Birth Date</label>
+                <input class="form-control" id="enrollment_birthDate" type="text">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Hire Date">Hire Date</label>
+                <input class="form-control" id="enrollment_hireDate" type="text">
+              </div>
+              <div class="form-group col-12">
+                <label for="Communication Preference">Communication Preference</label>
+                <select class="custom-select form-control" id="enrollment_communication">
+                  <option selected="">Choose...</option>
+                  <option value="1">  Text Message</option>
+                  <option value="2">  Push Notification</option>
+                  <option value="3">  Email</option>
+                </select>
+              </div>
+              <div class="form-group col-12">
+                <label for="Address">Address</label>
+                <input class="form-control" id="enrollment_address" type="text">
+              </div>
+              <div class="form-group col-md-7">
+                <label for="City">City</label>
+                <input class="form-control" id="enrollment_city" type="text">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="State">State</label>
+                <input class="form-control" id="enrollment_state" type="text">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="Zip">Zip</label>
+                <input class="form-control" id="enrollment_zip" type="text">
+              </div>
+              <div class="form-group col-12 mt-4 mb-4">
+                <h2 class="h3 font-weight-light border-bottom">Create Your Password</h2>
+              </div>
+              <div class="form-group">
+                <p>Passwords must be at least 8 characters and include at least one uppercase letter, one lowercase letter, and one number.</p>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Create Your Password">Create Your Password</label>
+                <input class="form-control" id="enrollment_enterPassword" type="password">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Create Your Password">Confirm Your Password</label>
+                <input class="form-control" id="enrollment_enterPassword" type="password">
+              </div>
+              <div class="col-12">
+                <div class="alert alert-secondary" role="alert">
+                  <div class="row mx-auto">
+                    <div class="col-1 form-group form-check"></div>
+                    <input class="form-check-input" id="enrollment_terms" type="checkbox">
+                    <div class="col-11"> </div>
+                    <p class="mb-0">I have read and accept the <span><a href="#">Terms of Use Agreement</a></span> that governs the site which includes my consent to receive program relate communications.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6 mx-auto mb-0">
+                <input class="btn btn-primary btn-block complete-enrollment" id="cmdSubmit" name="cmdSubmit" type="button" value="Complete Enrollment">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="d-block">
+    <div class="row mx-auto bg-light">
+      <div class="col-12">
+        <nav class="navbar navbar-light">
+          <ul class="nav mx-auto footer-links"></ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row py-4 bg-primary text-light text-center mx-auto">
+      <div class="col-12"><small class="mb-0 copyright">Copyright &copy; 2020. Rewardtrax</small></div>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/src/js/data.json"></script>
+  <script src="/src/js/navigation.json"></script>
+  <script type="text/javascript" src="/src/js/main.js"></script>
+  <script src="/js/jquery-stack-menu.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Devextreme-->
+  <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.6/js/dx.all.js"></script>
+</body>

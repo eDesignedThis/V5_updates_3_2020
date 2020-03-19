@@ -1,0 +1,27 @@
+extends ../../../pug/page-template-normal.pug
+
+block header
+    include ../../../pug/themes/adventure/headers/header--adventure.pug
+
+block page-content
+    main.full-height__adventure--login.full-size-img.d-flex.flex-column
+        .row.justify-content-center.mx-auto.my-auto.w-100
+            .col-xl-8#page-content
+                block page-title  
+                    include  ../../../pug/layout/components/page-titles.pug 
+                block page-content
+                .row
+                    .col-lg-6.d-flex.flex-column.mb-4.mb-lg-0.mx-auto
+                        .login-form__adventure.p-4.my-auto.text-white.bg-primary
+                            .row.flex-column
+                                .col-12 
+                                    h1.mb-0 Let's get you activated.
+                                    p Enter your invitation ID to begin enrollment.
+                                    
+                                .col-12
+                                    //- Insert Login Form Here
+                                    include ../../../pug/layout/components/forms/form-invitation.pug
+                        
+
+block footer-content
+    include ../../../pug/themes/adventure/footers/footer--adventure.pug

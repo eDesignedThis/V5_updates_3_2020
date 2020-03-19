@@ -10,61 +10,44 @@ $white: #fff;
 $transparent: transparent;
 $accent: $info;
 
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "transparent": $transparent
+);
+
+// Generate Color Utilities
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background: $color !important;
+  }
+
+  .btn-#{$name} {
+    background: $color !important;
+    border-color: $color !important;
+    &:hover {
+      background: darken($color, 10%) !important;
+      border-color: darken($color, 10%) !important;
+    }
+  }
+
+  .text-#{$name} {
+    color: $color !important;
+  }
+
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}
+
 // Bootstrap Background and Button Class Overrides
-.bg-primary,
-.btn-primary {
-  background: $primary !important;
-}
-
-.bg-secondary,
-.btn-secondary {
-  background: $secondary !important;
-}
-
-.bg-success,
-.btn-success {
-  background: $success !important;
-}
-
-.bg-danger,
-.btn-danger {
-  background: $danger !important;
-}
-
-.bg-warning,
-.btn-warning {
-  background: $warning !important;
-}
-
-.bg-info {
-  background: $info;
-}
-
-.bg-light {
-  background: $light !important;
-}
-
-.bg-dark {
-  background: $dark !important;
-}
-
-.bg-white {
-  background: $white !important;
-}
-
-.bg-transparent {
-  background: $transparent !important;
-}
-
-// Text Color Utility Overrides
-
-.text-primary {
-  color: $primary !important;
-}
-
-.text-secondary {
-  color: $secondary !important;
-}
 
 /***********************************************************
 - Mixins
@@ -80,5 +63,4 @@ $accent: $info;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/src/pug/themes/adventure/images/login_bg.jpeg");
 }

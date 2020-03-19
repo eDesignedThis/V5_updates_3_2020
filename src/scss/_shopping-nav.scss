@@ -1,0 +1,24 @@
+.megamenu-desktop {
+  .col-3 {
+    height: 540px;
+    overflow-y: auto;
+  }
+}
+
+#topCategories,
+#secondLvlCategories {
+  display: none;
+}
+
+#topCategoriesImageRep {
+  max-width: 75%;
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/331990/pexels-photo-331990.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

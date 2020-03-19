@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Welcome",
+    "url": "home.html",
+    "isPrivate": true
+  },
+  {
+    "name": "My Account",
+    "url": "myaccount.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Quick Points",
+    "url": "quickpoints.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Performance Tracking",
+    "url": "performancetracking.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Leaderboard",
+    "url": "leaderbaord.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Learn & Earn",
+    "url": "learnandearn.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Shopping",
+    "url": "shopping.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Profile",
+    "url": "profile.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Contact",
+    "url": "contact.html",
+    "isPrivate": false
+  },
+  {
+    "name": "Terms",
+    "url": "terms.html",
+    "isPrivate": false
+  },
+  {
+    "name": "Privacy",
+    "url": "privacy.html",
+    "isPrivate": false
+  },
+  {
+    "name": "Rules",
+    "url": "rules.html",
+    "isPrivate": false
+  },
+  {
+    "name": "FAQ",
+    "url": "faq.html",
+    "isPrivate": true
+  },
+  {
+    "name": "Logout",
+    "url": "login.html",
+    "isPrivate": false
+  }
+]

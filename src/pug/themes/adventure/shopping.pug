@@ -1,0 +1,126 @@
+extends ../../../pug/page-template-normal.pug
+
+block header
+    include ../../../pug/themes/adventure/headers/header--adventure.pug
+
+block page-content
+    main.full-height.d-flex.flex-column.py-5
+        .row.justify-content-center.mx-auto.w-100
+            .col-xl-8#page-content.pt-0.pb-5                    
+                block page-content
+                    //- Being Shopping Navigation Bar
+                    .row.align-items-center#shopping__navigation
+                        .col-md-3.col-lg-2.col-xl-3.mb-3.mb-md-0
+                            button#desktopDeptBtn.btn.btn-primary.btn-block.d-none.d-xl-block(href="#" role="button") Departments
+                                span.fas.fa-caret-down.ml-2
+                            button#mobileDeptBtn.btn.btn-secondary.btn-block.d-xl-none(href="#" role="button") Departments
+                                span.fas.fa-caret-right.ml-2
+                        .col-md-7.col-lg-8.col-xl-7.mb-3.mb-md-0
+                            .input-group.border
+                                .input-group-prepend
+                                    select.custom-select.border-0 
+                                        option(value="1") All Departments 
+                                input.form-control.border-0(type='text')
+                                .input-group-append
+                                    button.btn.btn-primary(role="button")
+                                        span.fas.fa-search
+                        .col-md-2.col-lg-2.mb-3.mb-md-0
+                            .row.justify-content-center#shoppping__navigation__icons
+                                .col-2.col-sm-1.col-md-6
+                                    a.btn.btn-primary.btn-block(href='#')
+                                        span.fas.fa-shopping-cart
+                                .col-2.col-sm-1.col-md-6
+                                    a.btn.btn-primary.btn-block(href="#")
+                                        span.fas.fa-heart
+
+                        .col-12.shadow
+                            .row.megamenu-desktop.overflow-hidden(style='height: 540px;')
+                                .col-3 
+                                    ul.list-group.border-0
+                                        li.list-group-item.border-0 
+                                            a#showTopCategories(href="#") Shop
+                                        li.list-group-item.border-0
+                                            a(href="./Events.aspx") Events
+                                        li.list-group-item.border-0 
+                                            a(href="./travel.aspx") Travel
+                                .col-3#topCategories
+                                    ul.list-group.border-0
+                                        li.list-group-item.border-0 
+                                            a(href="#") Apple
+                                   
+                                .col-3#secondLvlCategories 
+                                    ul.list-group.border-0
+                                        li.list-group-item.border-0 
+                                            a(href="#") Watch
+                                .col-3#topCategoriesImageRep
+                        .stack-menu
+                            nav#stack-menu
+                                ul
+                                    li
+                                        a(href='#') Fugiat
+                                        ul
+                                            li
+                                                a(href='#') Perferendis
+                                            li
+                                                a(href='#') Recusandae
+                                                ul
+                                                    li
+                                                        a(href='#') Vel
+                                                    li
+                                                        a(href='#') Cumque
+                                                    li
+                                                        a(href='#') Facere
+                                                    li
+                                                        a(href='#') Enim
+                                                    li
+                                                        a(href='#') Nihil
+                                                ul
+                                                    li
+                                                        a(href='#') Quidem
+                                                    li
+                                                        a(href='#') Temporibus
+                                                    li
+                                                        a(href='#') Fugit
+                                                    li
+                                                        a(href='#') Dolore
+                                                    li
+                                                        a(href='#') Vitae
+                                                    li
+                                                        a(href='#') Ipsum
+                                    li
+                                        a(href='#') Lorem
+                                        ul
+                                            li
+                                                a(href='#') Similique
+                                            li
+                                                a(href='#') Distinctio
+                                            li
+                                                a(href='#') Porro
+                                            li
+                                                a(href='#') Illum
+                                    li
+                                        a(href='#') Perspiciatis
+                                    li
+                                        a(href='#') Doloremque
+                                        ul
+                                            li
+                                                a(href='#') Quod
+                                            li
+                                                a(href='#') Provident
+                                            li
+                                                a(href='#') Cumque
+
+                                              
+
+block footer-content
+    include ../../../pug/themes/adventure/footers/footer--adventure.pug
+
+
+block scripts 
+    
+    script. 
+        $(document).ready(function(){
+             $("nav#stack-menu").stackMenu();
+        });   
+       
+

@@ -1,0 +1,25 @@
+extends ../../../pug/page-template-slim.pug
+
+block header
+    include ../../../pug/themes/adventure/headers/header--adventure.pug
+
+block page-content
+    main.full-height__adventure--login.full-size-img.d-flex.flex-column
+        .row.justify-content-center.mx-auto.my-auto.w-100
+            .col-xl-5#page-content.pt-0.pb-5
+
+                block page-title 
+                    .row.flex-column.py-4.border-bottom.mb-4.text-center.text-white#page-title-wrapper
+                        .col-12
+                            h1.page-title Enrollment
+                            p.lead.page-byline Activate your program.
+                    
+
+                    
+                block page-content
+                    .bg-primary.p-5.text-white
+                        include ../../../pug/layout/components/forms/form-enrollment.pug
+                        
+
+block footer-content
+    include ../../../pug/themes/adventure/footers/footer--adventure.pug

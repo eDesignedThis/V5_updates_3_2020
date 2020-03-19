@@ -4,6 +4,9 @@
 /***********************************************************
 - COMPONENTS
 ***********************************************************/
+// Jumbotron
+@import "../scss/_jumbotron.scss";
+
 // Links
 @import "../scss/_links.scss";
 
@@ -13,9 +16,11 @@
 // Forms
 @import "../scss/_forms.scss";
 
+// Shopping Navigation
+@import "../scss/_shopping-nav.scss";
+
 /***********************************************************
 - Themes
 ***********************************************************/
-
 // Adventure
 @import "../scss/themes/_theme--adventure.scss";
